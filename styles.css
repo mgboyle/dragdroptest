@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.task-container,
+.app-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+}
+
+.task,
+.app {
+    display: inline-block;
+    background-color: #eee;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    cursor: grab;
+}
+
+.app.correct {
+    background-color: #8bc34a;
+}

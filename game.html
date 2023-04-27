@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Match the Task with the App</h1>
+    <form id="player-form">
+        <label for="player-name">Enter your name:</label>
+        <input type="text" id="player-name" name="player-name" required>
+        <button type="submit">Start Game</button>
+    </form>
+    <div id="game-container" style="display:none;">
+        <div id="tasks" class="task-container">
+            <!-- Task items will be added here -->
+        </div>
+        <div id="apps" class="app-container">
+            <!-- App items will be added here -->
+        </div>
+        <!-- Add this inside the game-container div -->
+<button id="submit-btn">Submit</button>
+
+        <h3 id="score">Score: 0</h3>
+    </div>
+    <a href="leaderboard.html">View Leaderboard</a>
+    <script src="script.js"></script>
+</body>
+</html>
